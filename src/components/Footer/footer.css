@@ -1,0 +1,66 @@
+.footerWrapper {
+  background-color: #bcddfe;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 153px;
+  color: #22262a;
+
+  .footerTopSec {
+    display: flex;
+    justify-content: space-between;
+    .footerLogo {
+      width: 22%;
+      text-align: left;
+      p {
+        text-align: left;
+      }
+    }
+    .follow {
+      width: 18%;
+      text-align: left;
+      p {
+        text-align: left;
+      }
+      .social {
+        display: flex;
+        gap: 40px;
+      }
+    }
+    .contact {
+      width: 12%;
+      text-align: left;
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .footerMidSec {
+    display: flex;
+    justify-content: space-between;
+    .info {
+      width: 15%;
+      text-align: left;
+    }
+    .service {
+      width: 15%;
+      text-align: left;
+    }
+    .myact {
+      width: 15%;
+      text-align: left;
+    }
+    .offer {
+      width: 15%;
+      text-align: left;
+    }
+  }
+  .footerBottomSec {
+    margin: 5px 34px;
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f6f7f8;
+  }
+}

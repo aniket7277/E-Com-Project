@@ -67,10 +67,10 @@
         border: 2px solid #f1f3f4;
         padding: 10px 15px;
         cursor: pointer;
-        
-        option{
-            background-color: #f6f7f8;
-            border-radius: 10px;
+
+        option {
+          background-color: #f6f7f8;
+          border-radius: 10px;
         }
       }
     }
@@ -81,8 +81,63 @@
     .filterView {
       display: flex;
       gap: 10px;
-      img{
+      img {
         cursor: pointer;
+      }
+    }
+  }
+}
+.productViewWrapper {
+  display: flex;
+  color: #22262a;
+  margin: 24px 28px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  .productCard {
+    min-height: 447px;
+    width: 30%;
+    border: 3px solid #f6f7f8;
+    .hotTag {
+      position: absolute;
+      background-color: #ff4858;
+      padding: 5px 13px;
+      border-radius: 5px;
+      margin-left: -8px;
+      margin-top: 5px;
+    }
+
+    img {
+      width: 100%;
+    }
+    .productDetails {
+      .productRating {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      .productPrice {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: auto;
+        .currentPrice {
+          font-weight: 700;
+          font-size: 18px;
+          color: #40bfff;
+        }
+        .originalPrice {
+          color: #9098b1;
+          font-weight: 400;
+          font-size: 14px;
+          text-decoration: line-through;
+        }
+        .discount {
+          color: #fb7181;
+          font-weight: 700;
+          font-size: 14px;
+        }
       }
     }
   }
