@@ -1,0 +1,118 @@
+/* Basic Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Logo */
+.logo-container {
+  width: 10%;
+}
+.logo {
+}
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Navigation */
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #007bff;
+}
+
+/* Cart */
+.cart-container {
+    width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 6px;
+}
+.cart {
+  width: 20px;
+  height: 20px;
+}
+.cart-text{
+    color: black;
+}
+.cart-price {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Hamburger animation to cross */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide cart on mobile top, place it inside nav if needed */
+  .cart-container {
+    display: none;
+  }
+}
