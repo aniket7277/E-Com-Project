@@ -15,9 +15,9 @@
             font-size: 20px;
         }
     }
-    .hotDealsList{
+    .hotDealsList, .brandList{
         font-family: Proxima Nova;
-        .hotDealItem{
+        .hotDealItem, .brandItem{
             cursor: pointer;
             display: flex;
             justify-content: space-between;
