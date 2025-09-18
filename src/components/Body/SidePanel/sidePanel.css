@@ -1,14 +1,14 @@
 .sidePanelWrapper{
     width: 25%;
 }
-.hotDealsWrapper , .pricesWrapper, .brandWrapper{
+.hotDealsWrapper , .pricesWrapper, .brandWrapper , .moreWrapper{
     color: black;
     background-color: #F6F7F8;
     border-radius: 10px;
     padding: 28px 25px;
     text-align: left;
     margin-bottom: 24px;
-    .hotDealsTitle, .pricesTitle, .brandTitle{
+    .hotDealsTitle, .pricesTitle, .brandTitle, .moreTitle{
         font-family: Poppins;
         h2{
             font-weight: 500;
@@ -35,4 +35,15 @@
             }
         }
     }
+    .moreTitle{
+        cursor: pointer;
+        h2{
+            margin: 0;
+        }
+    }
+}
+.moreWrapper{
+    text-align: center !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

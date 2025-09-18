@@ -9,7 +9,9 @@ const Header = () => {
     <header className="header">
       {/* Left: Logo */}
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
+        <a href="">
+          <img src={logo} alt="Logo" className="logo" />
+        </a>
       </div>
 
       {/* Hamburger button */}

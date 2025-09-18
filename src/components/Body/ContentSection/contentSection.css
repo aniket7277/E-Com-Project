@@ -1,0 +1,89 @@
+.contentSectionWrapper {
+  width: 75%;
+  margin-top: -24px;
+
+  .bannerWrapper {
+    background-color: #40bfff;
+    margin: 24px 28px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    padding-top: 100px;
+
+    .BannerLeft {
+      width: 50%;
+      text-align: left;
+      margin-left: 40px;
+      font-family: Poppins;
+
+      .BannerHeadline {
+        width: 50%;
+        h1 {
+          font-weight: 500;
+          font-size: 30px;
+        }
+      }
+      .BannerDetails {
+        p {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+      .BannerButton {
+        span {
+          padding-bottom: 5px;
+          cursor: pointer;
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+    .BannerRight {
+      width: 50%;
+    }
+  }
+}
+.filterSecWrapper {
+  background-color: #f6f7f8;
+  display: flex;
+  color: #22262a;
+  margin: 24px 28px;
+  border-radius: 10px;
+  justify-content: space-between;
+
+  .filterLeft {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    .filterSort,
+    .filterShow {
+      select {
+        min-width: 142px;
+        background: transparent;
+        color: #22262a;
+        border: 2px solid #f1f3f4;
+        padding: 10px 15px;
+        cursor: pointer;
+        
+        option{
+            background-color: #f6f7f8;
+            border-radius: 10px;
+        }
+      }
+    }
+  }
+  .filterRight {
+    align-content: center;
+
+    .filterView {
+      display: flex;
+      gap: 10px;
+      img{
+        cursor: pointer;
+      }
+    }
+  }
+}
