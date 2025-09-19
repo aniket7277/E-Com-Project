@@ -1,14 +1,16 @@
-import Banner from "./Banner/Banner"
-import FilterSec from "./FilterSec/FilterSec"
-import ProductView from "./ProductView/ProductView"
-export default function ContentSection() {
-    return(
-        <>
-        <div className="contentSectionWrapper">
-            <Banner/>
-            <FilterSec/>
-            <ProductView/>
-        </div>
-        </>
-    )
+import Banner from "./Banner/Banner";
+import ProductView from "./ProductView/ProductView";
+
+type ContentSectionProps = {
+  products: any[];
+};
+
+export default function ContentSection({ products }: ContentSectionProps) {
+  return (
+    <div className="contentSectionWrapper">
+      <Banner />
+      {/* ✅ Pass products into ProductView */}
+      <ProductView products={products} />
+    </div>
+  );
 }

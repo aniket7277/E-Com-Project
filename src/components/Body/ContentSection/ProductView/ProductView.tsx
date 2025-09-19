@@ -1,34 +1,30 @@
-import { useState } from "react";
-import { ProductList } from "./ProductList";
+import { useState, useEffect } from "react";
 
-export default function ProductView() {
+type ProductViewProps = {
+  products: any[];
+};
+
+export default function ProductView({ products }: ProductViewProps) {
   const totalStars = 5;
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(ProductList.length / itemsPerPage);
+  // recalc pages when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [products]);
 
-  // calculate slice indexes
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentProducts = ProductList.slice(startIndex, endIndex);
+  const currentProducts = products.slice(startIndex, endIndex);
 
   return (
     <>
       <div className="productViewWrapper">
-        {currentProducts.map((product) => {
-          const {
-            id,
-            name,
-            rating,
-            price,
-            OriginalPrice,
-            discount,
-            image,
-            hot,
-          } = product;
-
-          return (
+        {currentProducts.map(
+          ({ id, name, rating, price, OriginalPrice, discount, image, hot }) => (
             <div className="productCard" key={id}>
               {hot === "true" && <span className="hotTag">HOT</span>}
               <img src={image} alt={name} />
@@ -59,11 +55,11 @@ export default function ProductView() {
                 </div>
               </div>
             </div>
-          );
-        })}
+          )
+        )}
       </div>
 
-      {/* Pagination controls */}
+      {/* Pagination */}
       <div className="productPagination">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
