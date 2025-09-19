@@ -1,49 +1,72 @@
-.sidePanelWrapper{
-    width: 25%;
+.sidePanelWrapper {
+  width: 25%;
 }
-.hotDealsWrapper , .pricesWrapper, .brandWrapper , .moreWrapper{
-    color: black;
-    background-color: #F6F7F8;
-    border-radius: 10px;
-    padding: 28px 25px;
-    text-align: left;
-    margin-bottom: 24px;
-    .hotDealsTitle, .pricesTitle, .brandTitle, .moreTitle{
-        font-family: Poppins;
-        h2{
-            font-weight: 500;
-            font-size: 20px;
-        }
+.hotDealsWrapper,
+.pricesWrapper,
+.brandWrapper,
+.moreWrapper,
+.colorWrapper {
+  color: black;
+  background-color: #f6f7f8;
+  border-radius: 10px;
+  padding: 28px 25px;
+  text-align: left;
+  margin-bottom: 24px;
+  .hotDealsTitle,
+  .pricesTitle,
+  .brandTitle,
+  .moreTitle,
+  .colorTitle {
+    font-family: Poppins;
+    h2 {
+      font-weight: 500;
+      font-size: 20px;
     }
-    .hotDealsList, .brandList{
-        font-family: Proxima Nova;
-        .hotDealItem, .brandItem{
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-        }
+  }
+  .hotDealsList,
+  .brandList {
+    font-family: Proxima Nova;
+    .hotDealItem,
+    .brandItem {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
     }
-    .priceRange{
-        font-family: Proxima Nova;
-        display: flex;
-        justify-content: space-between;
+  }
+  .priceRange {
+    font-family: Proxima Nova;
+    display: flex;
+    justify-content: space-between;
+  }
+  .priceSlider {
+    div {
+      div:nth-child(2) {
+        margin-top: -22px;
+      }
     }
-    .priceSlider{
-        div{
-            div:nth-child(2){
-                margin-top: -22px;
-            }
-        }
+  }
+  .moreTitle {
+    cursor: pointer;
+    h2 {
+      margin: 0;
     }
-    .moreTitle{
+  }
+}
+.moreWrapper {
+  text-align: center !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.colorWrapper {
+  .colorList {
+    display: flex;
+    justify-content: space-between;
+    .colorItem {
         cursor: pointer;
-        h2{
-            margin: 0;
-        }
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      border: 1px solid #fff;
     }
-}
-.moreWrapper{
-    text-align: center !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  }
 }

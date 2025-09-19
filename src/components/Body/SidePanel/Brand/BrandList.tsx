@@ -4,4 +4,5 @@ export const brandlist = [
     { id: 3, name: "Reebok", qunatity: 99},
     { id: 4, name: "Puma", qunatity: 99},
     { id: 5, name: "Skechers", qunatity: 99},
+    { id: 6, name: "Airmax", qunatity: 99},
 ];

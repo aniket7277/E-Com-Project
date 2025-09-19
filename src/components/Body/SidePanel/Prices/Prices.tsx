@@ -10,7 +10,7 @@ export default function Prices() {
           <h2>Prices</h2>
         </div>
         <div className="priceRange">
-          <h3>Range</h3>
+          <h3>Ranger :</h3>
           <h3>
             {" "}
             ${values[0].toFixed(2)} - ${values[1].toFixed(2)}
